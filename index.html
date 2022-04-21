@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+        <h1>Tic Tac Toe</h1>
+        <h2>Player 1: X</h2>
+        <h2>Player 2: 0</h2>
+    <div id="game">
+        <input type='text' id="a1" onClick="a1Action(); checkWin();" readonly >
+        <input type='text' id="a2" onClick="a2Action(); checkWin();" readonly>
+        <input type='text' id="a3" onClick="a3Action(); checkWin();" readonly>
+        <input type='text' id="b1" onClick="b1Action(); checkWin();" readonly>
+        <input type='text' id="b2" onClick="b2Action(); checkWin();" readonly>
+        <input type='text' id="b3" onClick="b3Action(); checkWin();" readonly>
+        <input type='text' id="c1" onClick="c1Action(); checkWin();" readonly>
+        <input type='text' id="c2" onClick="c2Action(); checkWin();" readonly>
+        <input type='text' id="c3" onClick="c3Action(); checkWin();" readonly>
+    </div>
+    <br>
+    <button onClick="reset();">Reset Game</button>
+    <br>
+    <h1 id='winner'>Winner: </h1>
+    <h2 id="p1-wins">Player 1: 0</h2>
+    <h2 id="p2-wins">Player 2: 0</h2>
+    <script src="./index.js"></script>
+</body>
+</html>
